@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            min-height: 100vh;
+            background: url('https://media.discordapp.net/attachments/1029897385779933216/1201736195344961557/Wallpaperengine4k.png?ex=65cae70c&is=65b8720c&hm=801beb459a94ecceb0c8cdab5a7f7c96ee1b99a1bceef792edde71d6538cf05b&=&format=webp&quality=lossless&width=840&height=468') no-repeat fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main container styling */
+        /* Trabajo heco por Hernandez Sanchez Carlos Enrique */
+        .main {
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            transition: transform 0.2s;
+            width: 600px;
+            background-color: rgba(255, 255, 255, 0.8); /* Color de fondo principal con opacidad */
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: green;
+        }
+
+        input,
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>Bienvenidos a GameZone</h1>
+    <center>
+        <h3>By gamers for gamers</h3>
+    </center>
+    <form onsubmit="showAlert(event)">
+        <p>
+            <label>
+                Usuario:
+                <input type="text" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Contraseña:
+                <input type="password" />
+            </label>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</div>
+
+<script>
+    function showAlert(event) {
+        // Prevents the default form submission
+        event.preventDefault();
+        alert('Inicio de sesion exitoso');
+    }
+</script>
+
+</body>
+</html>
